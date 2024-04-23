@@ -7,6 +7,7 @@ def fnt_limpiar():
     print("Copyright (c) 2024")
     print("Universidad catolica luis amigo\n")
 def fnt_agente(op):
+    global sw
     fnt_limpiar
     if op == "1":
         print("<<<AGREGAR VIAJERO>>>")
@@ -33,6 +34,10 @@ def fnt_agente(op):
             for i in list_viajeros:
                 print(i)
             input()
+    elif op == "3":
+    
+        sw = False
+        print("Adios vaquero")
    
 
 while sw == True:
